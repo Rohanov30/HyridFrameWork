@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-04T13:41:49 IST" name="Default suite" finished-at="2025-12-04T13:42:06 IST" duration-ms="16939">
+    <groups>
+    </groups>
+    <test started-at="2025-12-04T13:41:49 IST" name="Default test" finished-at="2025-12-04T13:42:06 IST" duration-ms="16939">
+      <class name="Tests.BrokenLinks">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.BrokenLinks@52e6fdee]" started-at="2025-12-04T13:41:49 IST" name="setUp" finished-at="2025-12-04T13:42:01 IST" duration-ms="11981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBrokenLinksOnProductPage()[pri:0, instance:Tests.BrokenLinks@52e6fdee]" started-at="2025-12-04T13:42:01 IST" name="verifyBrokenLinksOnProductPage" finished-at="2025-12-04T13:42:05 IST" duration-ms="4155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokenLinksOnProductPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.BrokenLinks@52e6fdee]" started-at="2025-12-04T13:42:05 IST" name="tearDown" finished-at="2025-12-04T13:42:06 IST" duration-ms="726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.BrokenLinks -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SmokeSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="SmokeTests(failed)">
+    <classes>
+      <class name="Tests.smoke">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testAllUserLogins"/>
+        </methods>
+      </class> <!-- Tests.smoke -->
+    </classes>
+  </test> <!-- SmokeTests(failed) -->
+</suite> <!-- Failed suite [SmokeSuite] -->
