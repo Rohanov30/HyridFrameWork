@@ -122,7 +122,7 @@
       </plugins>
     </pluginManagement>
 
-    <!-- Added configuration: force Surefire to use the smoke TestNG suite file so only smoke tests run by default -->
+    <!-- Surefire configured to use TestNG suite file by default (leave detection to plugin) -->
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -134,30 +134,6 @@
             <suiteXmlFile>smoke-testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
-      </plugin>
-
-      <!-- Copy TestNG results into surefire-reports so Jenkins JUnit publisher finds them -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-antrun-plugin</artifactId>
-        <version>3.1.0</version>
-        <executions>
-          <execution>
-            <id>copy-testng-results-to-surefire</id>
-            <phase>test</phase>
-            <goals>
-              <goal>run</goal>
-            </goals>
-            <configuration>
-              <tasks>
-                <mkdir dir="${project.build.directory}/surefire-reports"/>
-                <copy file="${project.basedir}/test-output/testng-results.xml"
-                      tofile="${project.build.directory}/surefire-reports/TEST-TestNG.xml"
-                      overwrite="true"/>
-              </tasks>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
