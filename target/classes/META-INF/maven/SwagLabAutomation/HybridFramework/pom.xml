@@ -122,7 +122,7 @@
       </plugins>
     </pluginManagement>
 
-    <!-- Surefire configured to use TestNG suite file by default (leave detection to plugin) -->
+    <!-- Surefire configured to use TestNG suite file by default -->
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -133,6 +133,7 @@
           <suiteXmlFiles>
             <suiteXmlFile>smoke-testng.xml</suiteXmlFile>
           </suiteXmlFiles>
+          <!-- when suiteXmlFiles is provided, Surefire will execute only the tests declared in the suite -->
         </configuration>
       </plugin>
     </plugins>
