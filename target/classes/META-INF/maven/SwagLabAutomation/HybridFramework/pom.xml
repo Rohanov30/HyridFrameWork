@@ -121,5 +121,22 @@
         </plugin>
       </plugins>
     </pluginManagement>
+
+    <!-- Added configuration: force Surefire to use the smoke TestNG suite file so only smoke tests run by default -->
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.3.0</version>
+        <configuration>
+          <!-- run TestNG suite file located at project root -->
+          <suiteXmlFiles>
+            <suiteXmlFile>smoke-testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+          <!-- when suiteXmlFiles is provided, Surefire will execute only the tests declared in the suite
+               which effectively disables other test classes from being picked up automatically -->
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>
