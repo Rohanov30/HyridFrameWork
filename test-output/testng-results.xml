@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-01T20:55:45 IST" name="Default suite" finished-at="2026-01-01T20:56:02 IST" duration-ms="17231">
+  <suite started-at="2026-01-15T20:39:40 IST" name="Suite" finished-at="2026-01-15T20:39:54 IST" duration-ms="13173">
     <groups>
     </groups>
-    <test started-at="2026-01-01T20:55:45 IST" name="Default test" finished-at="2026-01-01T20:56:02 IST" duration-ms="17231">
-      <class name="Tests.smoke">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.smoke@52e6fdee]" started-at="2026-01-01T20:55:45 IST" name="setUp" finished-at="2026-01-01T20:55:58 IST" duration-ms="13419" status="PASS">
+    <test started-at="2026-01-15T20:39:40 IST" name="ProductTest" finished-at="2026-01-15T20:39:54 IST" duration-ms="13173">
+      <class name="Tests.ProductNameTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ProductNameTest@441772e]" started-at="2026-01-15T20:39:40 IST" name="setUp" finished-at="2026-01-15T20:39:52 IST" duration-ms="11619" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginFunctionality()[pri:0, instance:Tests.smoke@52e6fdee]" started-at="2026-01-01T20:55:58 IST" name="testLoginFunctionality" finished-at="2026-01-01T20:56:00 IST" duration-ms="1883" status="PASS">
+        <test-method signature="checkItemNames()[pri:0, instance:Tests.ProductNameTest@441772e]" started-at="2026-01-15T20:39:52 IST" name="checkItemNames" finished-at="2026-01-15T20:39:53 IST" duration-ms="826" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.smoke@52e6fdee]" started-at="2026-01-01T20:56:00 IST" name="tearDown" finished-at="2026-01-01T20:56:02 IST" duration-ms="1795" status="PASS">
+        </test-method> <!-- checkItemNames -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ProductNameTest@441772e]" started-at="2026-01-15T20:39:53 IST" name="tearDown" finished-at="2026-01-15T20:39:54 IST" duration-ms="643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.smoke -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Tests.ProductNameTest -->
+    </test> <!-- ProductTest -->
+  </suite> <!-- Suite -->
 </testng-results>
