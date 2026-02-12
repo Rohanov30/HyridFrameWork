@@ -5,8 +5,7 @@
     <classes>
       <class name="Tests.ProductNameTest">
         <methods>
-          <include name="checkPrice"/>
-          <include name="checkItemNames"/>
+          <include name="filterFunctionalitytest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
