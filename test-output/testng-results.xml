@@ -1,104 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="1" failed="1" skipped="0">
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-15T22:59:23 IST" name="Default suite" finished-at="2026-01-15T22:59:51 IST" duration-ms="27388">
+  <suite started-at="2026-02-19T00:46:10 IST" name="Default suite" finished-at="2026-02-19T00:46:28 IST" duration-ms="18880">
     <groups>
     </groups>
-    <test started-at="2026-01-15T22:59:23 IST" name="Default test" finished-at="2026-01-15T22:59:51 IST" duration-ms="27388">
-      <class name="Tests.ProductNameTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ProductNameTest@4d9e68d0]" started-at="2026-01-15T22:59:23 IST" name="setUp" finished-at="2026-01-15T22:59:45 IST" duration-ms="21712" status="PASS">
+    <test started-at="2026-02-19T00:46:10 IST" name="Default test" finished-at="2026-02-19T00:46:28 IST" duration-ms="18880">
+      <class name="Tests.AllUserLogins">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.AllUserLogins@7586beff]" started-at="2026-02-19T00:46:10 IST" name="setUp" finished-at="2026-02-19T00:46:14 IST" duration-ms="3977" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="sortItemTest()[pri:1, instance:Tests.ProductNameTest@4d9e68d0]" started-at="2026-01-15T22:59:45 IST" name="sortItemTest" finished-at="2026-01-15T22:59:45 IST" duration-ms="494" status="PASS">
+        <test-method signature="testLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:Tests.AllUserLogins@7586beff]" started-at="2026-02-19T00:46:14 IST" name="testLoginFunctionality" data-provider="loginData" finished-at="2026-02-19T00:46:14 IST" duration-ms="386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sortItemTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ProductNameTest@4d9e68d0]" started-at="2026-01-15T22:59:45 IST" name="tearDown" finished-at="2026-01-15T22:59:46 IST" duration-ms="320" status="PASS">
+        </test-method> <!-- testLoginFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AllUserLogins@7586beff]" started-at="2026-02-19T00:46:14 IST" name="tearDown" finished-at="2026-02-19T00:46:15 IST" duration-ms="723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ProductNameTest@4d9e68d0]" started-at="2026-01-15T22:59:46 IST" name="setUp" finished-at="2026-01-15T22:59:49 IST" duration-ms="3224" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.AllUserLogins@7586beff]" started-at="2026-02-19T00:46:15 IST" name="setUp" finished-at="2026-02-19T00:46:18 IST" duration-ms="2800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="filterFunctionalitytest()[pri:2, instance:Tests.ProductNameTest@4d9e68d0]" started-at="2026-01-15T22:59:49 IST" name="filterFunctionalitytest" finished-at="2026-01-15T22:59:50 IST" duration-ms="911" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found in the current frame
-  (Session info: chrome=143.0.7499.193)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a144be2dbf9034b8aee3f655721699bf, getElementTagName {id=f.216D6F49DDEA416F1A38E5FA6DE0BA60.d.5359AE8A45D4916C28B1607095E6443B.e.14}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50210}, goog:processID: 18084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50210/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a144be2dbf9034b8aee3f655721699bf)] -> class name: product_sort_container]
-Session ID: a144be2dbf9034b8aee3f655721699bf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=143.0.7499.193)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a144be2dbf9034b8aee3f655721699bf, getElementTagName {id=f.216D6F49DDEA416F1A38E5FA6DE0BA60.d.5359AE8A45D4916C28B1607095E6443B.e.14}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50210}, goog:processID: 18084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50210/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a144be2dbf9034b8aee3f655721699bf)] -> class name: product_sort_container]
-Session ID: a144be2dbf9034b8aee3f655721699bf
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:134)
-at org.openqa.selenium.support.ui.Select.<init>(Select.java:43)
-at Tests.ProductNameTest.filterFunctionalitytest(ProductNameTest.java:91)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method signature="testLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:Tests.AllUserLogins@7586beff]" started-at="2026-02-19T00:46:18 IST" name="testLoginFunctionality" data-provider="loginData" finished-at="2026-02-19T00:46:18 IST" duration-ms="391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- filterFunctionalitytest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ProductNameTest@4d9e68d0]" started-at="2026-01-15T22:59:50 IST" name="tearDown" finished-at="2026-01-15T22:59:51 IST" duration-ms="366" status="PASS">
+        </test-method> <!-- testLoginFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AllUserLogins@7586beff]" started-at="2026-02-19T00:46:18 IST" name="tearDown" finished-at="2026-02-19T00:46:19 IST" duration-ms="829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.ProductNameTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.AllUserLogins@7586beff]" started-at="2026-02-19T00:46:19 IST" name="setUp" finished-at="2026-02-19T00:46:22 IST" duration-ms="2884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:Tests.AllUserLogins@7586beff]" started-at="2026-02-19T00:46:22 IST" name="testLoginFunctionality" data-provider="loginData" finished-at="2026-02-19T00:46:22 IST" duration-ms="404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AllUserLogins@7586beff]" started-at="2026-02-19T00:46:22 IST" name="tearDown" finished-at="2026-02-19T00:46:23 IST" duration-ms="1195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.AllUserLogins@7586beff]" started-at="2026-02-19T00:46:23 IST" name="setUp" finished-at="2026-02-19T00:46:26 IST" duration-ms="2848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:Tests.AllUserLogins@7586beff]" started-at="2026-02-19T00:46:26 IST" name="testLoginFunctionality" data-provider="loginData" finished-at="2026-02-19T00:46:26 IST" duration-ms="390" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AllUserLogins@7586beff]" started-at="2026-02-19T00:46:26 IST" name="tearDown" finished-at="2026-02-19T00:46:28 IST" duration-ms="1938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.AllUserLogins -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

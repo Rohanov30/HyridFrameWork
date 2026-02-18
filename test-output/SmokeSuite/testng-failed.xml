@@ -5,12 +5,13 @@
     <listener class-name="listeners.TestListener"/>
   </listeners>
   <test thread-count="5" name="SmokeTests(failed)">
+    <parameter name="urlr" value="https://www.saucedemo.com/"/>
     <classes>
       <class name="Tests.smoke">
         <methods>
           <include name="tearDown"/>
+          <include name="testLoginFunctionality"/>
           <include name="setUp"/>
-          <include name="testAllUserLogins"/>
         </methods>
       </class> <!-- Tests.smoke -->
     </classes>

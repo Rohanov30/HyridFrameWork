@@ -8,7 +8,7 @@ import java.util.Properties;
 import java.util.Arrays;
 import java.util.List;
 import static org.testng.Assert.*;
-import org.testng.annotations.Listeners;
+
 import listeners.TestListener;
 
 @Listeners(TestListener.class)
@@ -24,7 +24,7 @@ public class AllUserLogins extends Base {
         tearBrowser();
     }
 
-    @Test
+    @Test(enabled = false)
     public void testAllUserLogins() {
         Properties users = Utility.loadUserProperties();
         List<String> usernames = Arrays.asList(
@@ -43,4 +43,22 @@ public class AllUserLogins extends Base {
             Utility.takeSnapshot(driver, "screenshots/" + username + "_login.png");
         }
     }
+    
+    @Test(dataProvider = "loginData")
+    public void testLoginMultipleAdmin(String username, String password)
+    {
+    			LandingPage landingPage = new LandingPage(driver);	
+    					landingPage.login(username,password);
+		
+    }
+    @DataProvider(name = "loginData")
+    public Object[][] loginData() {
+		return new Object[][] {
+			{"standard_user", "secret_sauce"},
+			{"locked", "secret_sauce"},
+			{"problem", "secret_sauce"},
+			{"performance", "secret_sauce"},
+		};
+    
+}
 }

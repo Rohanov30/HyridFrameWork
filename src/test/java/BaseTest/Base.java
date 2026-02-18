@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-public class Base {
+public abstract class Base {
     protected WebDriver driver;
 
     public void invokeBrowser() {
